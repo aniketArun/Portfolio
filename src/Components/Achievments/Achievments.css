@@ -37,6 +37,17 @@
     }
 
     .patent-post iframe{
+        width: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .achieve-container h1{
+        font-size: 22px;
+    }
+
+    .patent-post iframe{
         width: 300px;
     }
 

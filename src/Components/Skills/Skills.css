@@ -25,6 +25,24 @@
 /* .skills:nth-child(){
     animation-delay: 5.0s;
 } */
+/* Media queries for mobile devices */
+@media only screen and (max-width: 1024px) {
+    .container-skill{
+        /* max-width: 400px; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills{
+        /* width: 300px; */
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .container-skill h1{
+        font-size: 30px;
+    }
+}
 
 /* Media queries for mobile devices */
 @media only screen and (max-width: 600px) {
@@ -33,8 +51,9 @@
     }
 
     .skills{
-        width: 400px;
+        width: 300px;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .container-skill h1{

@@ -36,15 +36,10 @@
   }
   
   .container{
+    max-width: 300px;
     font-size: 12px;
     margin-top: 15px;
-  }
-  @keyframes move-loop {
-    0% {
-      transform: translateX(80%);
-    }
-    100% {
-      transform: translateX(-80%);
-    }
+    /* flex-direction: row; */
+    flex-wrap: wrap;
   }
 }

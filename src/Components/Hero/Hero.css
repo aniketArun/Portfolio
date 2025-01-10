@@ -119,3 +119,30 @@
         opacity: 1;
     }
 }
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 1024px) {
+    .hero-content{
+     padding: 0px;
+    }
+    .hero-heading{
+     font-size: 50px;
+    }
+    .hero-content p{
+     font-size: 22px;
+    }
+ }
+/* Media queries for mobile devices */
+@media only screen and (max-width: 412px) {
+   .hero-content{
+    padding: 0px;
+   }
+   .hero-heading{
+    font-size: 22px;
+   }
+   .hero-content p{
+    font-size: 12px;
+   }
+}
+
+
