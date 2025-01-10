@@ -1,0 +1,17 @@
+.c-box{
+    font-family: "Balsamiq Sans", serif;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.c-box h1{
+    font-size: 55px;
+    color: #d31256; 
+    background-image: linear-gradient(45deg, #d31256 24%, #d16bb1 58%, #b1c549 33%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

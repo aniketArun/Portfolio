@@ -1,0 +1,107 @@
+/* General styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.icon-btn {
+    font-size: 2rem;
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #d31256;
+    background-image: linear-gradient(45deg, #d31256 24%, #d16bb1 58%, #b1c549 33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden on larger screens */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    font-family: "Balsamiq Sans", serif;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f0a500;
+}
+
+.contact-btn {
+    font-family: "Balsamiq Sans", serif;
+    border: wheat;
+    background-image: linear-gradient(to right, #DC2424 0%, #4A569D 51%, #DC2424 100%);
+    padding: 15px 35px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-position: right center;
+    color: #fff;
+    scale: 1.1;
+}
+
+.icon-btn:hover {
+    background-image: linear-gradient(20deg, #b1c549 24%, #d16bb1 58%, #d31256 33%);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu toggle on smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show links when toggled */
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .contact-btn{
+        display: none;
+    }
+}

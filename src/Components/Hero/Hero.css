@@ -1,0 +1,121 @@
+.avatar {
+    margin-top: 20px;
+    height: 200px;
+    border-radius: 50%;
+    fill: black;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.hero-content {
+    /* width: 100%; */
+    margin: 20px;
+    padding: 50px;
+}
+
+.hero-heading {
+    font-family: "Balsamiq Sans", serif;
+    color: #128bd6;
+    font-size: 55px;
+    background-image: linear-gradient(45deg, #128bd6 24%, #69d1c9 58%, #49c578 33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-content p {
+    font-family: "Balsamiq Sans", serif;
+    font-size: 44px;
+    /* width: 100vw; */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(13) infinite alternate,
+        blink 1000ms steps(13) infinite normal;
+    border-right: 5px solid black;
+}
+
+.connect-btn {
+    background-image: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%);
+    font-family: "Balsamiq Sans", serif;
+}
+
+.connect-btn {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-color: wheat;
+    box-shadow: 0 0 20px #e6a52c;
+    border-radius: 10px;
+    display: block;
+}
+
+.connect-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    height: 50px;
+    padding: 20px;
+    filter: invert();
+    opacity: 0.2;
+}
+
+.social-icons:hover {
+    filter: invert();
+    opacity: 1;
+}
+
+@keyframes typewriter {
+    from {
+        width: 50%;
+    }
+
+    to {
+        width: 110%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: rgb(232, 236, 11);
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+    .hero-heading{
+        margin-top: 0px;
+        font-size: 28px;
+    }
+    .hero-content{
+        margin-top: 5px;
+        margin-left: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .hero-content p{
+        font-size: 12px;
+    }
+    
+    .social-icons{
+        opacity: 1;
+    }
+}

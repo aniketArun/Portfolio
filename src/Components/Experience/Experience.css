@@ -1,0 +1,70 @@
+/* Experience Section */
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Experience Card */
+.experience-card {
+    font-family: "Balsamiq Sans", serif;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(2, 0, 36);
+    color: #ffffff;
+    box-shadow: 0 0 20px #e6a52c;
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+    animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+}
+
+/* Hover Effect */
+.experience-card:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    transform: scale(1.05); /* Slightly enlarges the card */
+}
+
+/* Card Header Styling */
+.experience-card span h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #e6a52c;
+}
+
+.experience-card em {
+    font-style: italic;
+    color: #f0e68c;
+}
+
+.experience-card ul {
+    margin-top: 15px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.experience-card ul li {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.exp-title{
+    font-size: 2rem;
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #d31256; 
+    background-image: linear-gradient(45deg, #d31256 24%, #d16bb1 58%, #b1c549 33%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

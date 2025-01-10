@@ -1,0 +1,45 @@
+.project-box{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Balsamiq Sans", serif;
+}
+
+.project-box h1{
+    font-size: 55px;
+    color: #d31256; 
+    background-image: linear-gradient(45deg, #d31256 24%, #d16bb1 58%, #b1c549 33%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+}
+
+.box-container{
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.project-box span{
+    font-size: 22px;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  

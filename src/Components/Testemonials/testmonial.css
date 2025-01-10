@@ -1,0 +1,86 @@
+.carousel-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+}
+
+.carousel-card {
+  font-family: "Balsamiq Sans", serif;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 30px;
+  color: white;
+  /* fallback for old browsers */
+  background: rgb(2, 0, 36);
+  box-shadow: 0 0 20px #e6a52c;
+  transition: all 0.8s ease-in-out;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-card:hover{
+  background: linear-gradient(
+        60deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    transform: scale(1.05); /* Slightly enlarges the card */
+}
+
+
+.profile-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
+.testimonial-content {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.testimonial-name {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.profile-link:hover{
+  padding: 10px;
+  color: #e6a52c;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-card {
+    height: 350px;
+    padding: 20px;
+  }
+
+  .testimonial-content {
+    font-size: 1rem;
+  }
+}
