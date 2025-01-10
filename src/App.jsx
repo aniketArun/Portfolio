@@ -1,4 +1,4 @@
-import Header from './Components/header/header'
+import Header from './Components/header/Header'
 import Hero from './Components/Hero/Hero'
 import Experience from './Components/Experience/Experience'
 import Line from './Components/Seperator/Seperator'
